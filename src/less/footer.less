@@ -1,0 +1,82 @@
+.footer {
+	background-color: black;
+	min-height: 220px;
+}
+
+.footer__contacts {
+	// margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0;
+	// padding-left: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.footer__contacts-elem {
+	width: 50px;
+	height: 50px;
+	// border: 1px solid red;
+	color: transparent;
+}
+
+.footer__contacts-elem--github {
+	background-image: url("../../src/icons/svg_github.svg");
+	background-size: cover;
+}
+
+.footer__contacts-elem--vk {
+	background-image: url("../../src/icons/svg_vk.svg");
+	background-size: cover;
+}
+
+.footer__contacts-elem--telegram {
+	background-image: url("../../src/icons/svg_telegram.svg");
+	background-size: cover;
+}
+
+.footer__contacts-elem--email {
+	background-image: url("../../src/icons/svg_email.svg");
+	background-size: cover;
+}
+
+.footer__contacts-elem--skype {
+	background-image: url("../../src/icons/svg_skype.svg");
+	background-size: cover;
+}
+
+.footer__author {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: 30px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer__author:before,
+.footer__author:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 30%;
+    height: 3px;
+    /* background: #6CBD83; */
+    background: #fff;
+    border: solid #fff;
+    border-width: 0 10px;
+}
+
+.footer__author:after {
+    margin-right: -100%;
+}
+
+.footer__author:before {
+    margin-left: -100%;
+}

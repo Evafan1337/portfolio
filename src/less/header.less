@@ -1,0 +1,153 @@
+
+.header {
+	min-height: 1000px;
+	/*padding-top: 50px;*/
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 100%), url("../../src/images/F1000035.jpg");
+	/*background: ;*/
+	background-position-y: center;
+	/*background-position: center center;*/
+	/*background-position-x: 350px;*/
+	/*background-size: 100%;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-image: url('background: url("../../src/images/F1000035.jpg');*/
+	/*padding-bottom: 50px;*/
+	/*background: gray;*/
+	/*background: black;*/
+	color: white;
+
+
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header--portfolio {
+	min-height: 200px;
+	/*background: black;*/
+	background: white;
+}
+
+.header__inner {
+	min-width: 940px;
+}
+
+.header__navigation {
+	margin-top: 50px;
+	/*position: fixed;*/
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	background: black;
+}
+
+.header__link {
+	display: flex;
+    /* justify-content: end; */
+    align-items: center;
+    justify-content: center;
+	/*display: block;*/
+	width: 100%;
+	min-height: 50px;
+	/*border: 1px solid red;*/
+	text-align: center;
+	font-size: 22px;
+	line-height: 26px;
+	text-decoration: none;
+	color: white;
+	transition-duration: 350ms;
+}
+
+.header__link--back {
+	position: relative;
+	width: 250px;
+	/*background: red;*/
+	background-image: url('../../src/icons/svg_white_back.svg');
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+    /*height: 60px;*/
+    /*border: 1px solid red;*/
+}
+
+/*.header__link--back:before {*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*width: 30px;*/
+	/*height: 30px;*/
+	/*background-color: blue;*/
+/*}*/
+
+.header__link:hover{
+	background: gray;
+	min-height: 46px;
+	/*color: black;*/
+	/*outline: 2px solid black;*/
+}
+
+.header__link:active {
+	/*color: white;*/
+}
+
+.header__link--back:hover {
+	/*background-image: url('../../src/icons/svg_back.svg');*/
+	background-image: url('../../src/icons/svg_white_back.svg');
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/*Описание на месте фото*/
+
+.header__preview {
+	/*padding-top: -50px;*/
+	/*padding-bottom: 250px;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__preview-name {
+	padding-bottom: 250px;
+	width: 30%;
+	font-size: 48px;
+}
+
+.header__preview-text {
+	padding-top: 150px;
+	width: 25%;
+	font-size: 36px;
+	/*font-weight: bold;*/
+}
+
+@media (max-width: 940px) {
+
+	.header {
+		min-height: 900px;
+	}
+
+	.header__navigation {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header__preview {
+		flex-direction: column;
+		/*justify-content: space-around;*/
+	}
+
+	.header__preview-name {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+	.header__preview-text {
+		width: 40%;
+		padding-top: 0;
+	}
+
+	.header__link {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,133 @@
+.portfolio {
+	/*padding-top: 100px;*/
+	/*padding-bottom: 100px;*/
+}
+
+.portfolio__container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.portfolio__elem {
+	width: 300px;
+	height: 300px;
+	border: 2px solid black;
+	margin-bottom: 10px;
+	/*transition: 350ms;*/
+	/*transition: background 350ms ease;*/
+	/*animation-duration: 350ms;*/
+	transition: background 500ms;
+	text-decoration: none;
+}
+
+.portfolio__elem-hover-info {
+	color: white;
+}
+
+.portfolio__elem--ship-landing {
+	background-image: url("../../src/images/png_ship-landing.png");
+	background-size: cover;
+}
+
+.portfolio__elem--technomart {
+	background-image: url("../../src/images/jpg_technomart.jpg");
+	background-size: cover;
+}
+
+.portfolio__elem--doingsdone {
+	background-image: url("../../src/images/jpg_doingsdone.jpg");
+	background-size: cover;
+}
+
+.portfolio__elem--motorchik {
+	background-image: url("../../src/images/png_motorchik.png");
+	background-size: cover;
+}
+
+.portfolio__elem--auction {
+	background-image: url("../../src/images/jpg_auction.jpg");
+	background-size: cover;
+}
+
+.portfolio__elem--cat-energy {
+	background-image: url("../../src/images/jpg_cat-energy.jpg");
+	background-size: 125%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.portfolio__elem-hover-info {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	/*align-items:*/
+	min-height: 300px;
+	justify-content: space-evenly;
+	opacity: 0;
+	transition-duration: 500ms;
+}
+
+.portfolio__elem-skills-header,
+.portfolio__elem-header {
+	margin-top:10px;
+	margin-bottom: 10px;
+	/*display: none;*/
+	text-align: center;
+	/*font-weight: 400;*/
+	/*opacity: 0;*/
+	color: white;
+	transition: 350ms;
+}
+
+.portfolio__date,
+.portfolio__specs-elem {
+	font-weight: 800;
+}
+
+.portfolio__date {
+	display: block;
+	margin-left: 10px;
+	margin-right: 10px;
+	/*text-align: center;*/
+}
+
+.portfolio__elem:hover .portfolio__elem-hover-info{
+	/*display: block;*/
+	opacity: 1;
+	/*color: red;*/
+}
+
+.portfolio__elem--ship-landing:hover {
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.95) 50%, rgba(25, 25, 25, 0.95) 100%), url("../../src/images/png_ship-landing.png");
+	background-size: cover;	
+}
+
+.portfolio__elem--motorchik:hover {
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.95) 50%, rgba(25, 25, 25, 0.95) 100%), url("../../src/images/png_motorchik.png");
+	background-size: cover;	
+}
+
+.portfolio__elem--technomart:hover {
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.95) 50%, rgba(25, 25, 25, 0.95) 100%), url("../../src/images/jpg_technomart.jpg");
+	background-size: cover;
+}
+
+.portfolio__elem--doingsdone:hover {
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.95) 50%, rgba(25, 25, 25, 0.95) 100%), url("../../src/images/jpg_doingsdone.jpg");
+	background-size: cover;
+}
+
+/*jpg_auction.jpg*/
+.portfolio__elem--auction:hover {
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.95) 50%, rgba(25, 25, 25, 0.95) 100%), url("../../src/images/jpg_auction.jpg");
+	background-size: cover;
+}
+/*jpg_cat-energy.jpg*/
+.portfolio__elem--cat-energy:hover{
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.95) 50%, rgba(25, 25, 25, 0.95) 100%), url("../../src/images/jpg_cat-energy.jpg");
+	/*background-size: cover;*/
+	background-size: 125%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
