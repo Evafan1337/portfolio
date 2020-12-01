@@ -133,10 +133,27 @@
 
 	.header {
 		min-height: 900px;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 100%), url("../../src/images/F1000035_cropped3.jpg");
+		background-size: cover;
+	}
+
+	.header--portfolio {
+		min-height: 200px;
 	}
 
 	.header__inner {
 		min-width: auto;
+	}
+
+	.header__link--back {
+		width: 100%;
+		margin-left: auto;
+    	margin-right: auto;
+    	background-size: 10%;
+	}
+
+	.header__link--back:hover {
+		background-size: 10%;
 	}
 
 	.header__navigation {
@@ -151,5 +168,11 @@
 	.header__link {
 		text-align: left;
 		/*font-size: 20px;*/
+	}
+}
+
+@media (max-width: 576px) {
+	.header__navigation {
+		margin-top: 0;
 	}
 }
