@@ -11,12 +11,12 @@
 <body>
 	<header class="header">
 		<div class="header__inner">
-			<nav class="header__navigation container">
-				<a href="" class="header__link">Обо мне</a>
-				<a href="" class="header__link">Квалификация</a>
-				<a href="" class="header__link">Опыт работы</a>
-				<a href="" class="header__link">Портфолио</a>
-				<a href="" class="header__link">Контакты</a>
+			<nav id="navigationMenu" class="header__navigation container">
+				<a href="#aboutMe" class="header__link">Обо мне</a>
+				<a href="#portfolio" class="header__link">Портфолио</a>
+				<a href="#skills" class="header__link">Квалификация</a>
+				<a href="#experience" class="header__link">Опыт работы</a>
+				<a href="#contacts" class="header__link">Контакты</a>
 			</nav>
 		</div>
 
@@ -27,7 +27,7 @@
 	</header>
 
 	<main class="main">
-		<section class="about container">
+		<section id="aboutMe" class="about container">
 			<h2 class="about__header lined-header">Обо мне</h2>
 			<p class="about__text">
 				Здравствуйте. Меня зовут Саша, мне 21 год и я начинающий веб-разработчик. Люблю программировать и создавать одинаково красиво и функциональные сайты. Веб разработкой я занимаюсь больше двух лет и за это время успел поработать и попробовать себя и со стороны Frontend и со стороны Backend.
@@ -43,7 +43,7 @@
 			</p>
 		</section>
 
-		<section class="portfolio container">
+		<section id="portfolio" class="portfolio container">
 			<h2 class="portfolio__header lined-header">Портфолио</h2>
 			<div class="portfolio__container">
 				<a href="ship_landing.html" class="portfolio__elem portfolio__elem--ship-landing">
@@ -173,7 +173,7 @@
 			</ul>
 		</section>
 
-		<section class="skills container">
+		<section id="skills" class="skills container">
 			<h2 class="skills__header lined-header">Навыки и квалификация</h2>
 			<!-- Надо на ul наверно? -->
 			<ul class="skills__inner">
@@ -217,7 +217,7 @@
 			<a href="" class="skills__link-to-grades">К сертификатам</a>
 		</section>
 
-		<section class="experience container">
+		<section id="experience" class="experience container">
 			<h2 class="expirience__header lined-header">Опыт работы</h2>
 			<ul class="expririence__list">
 				<li class="expirience__elem">
@@ -282,7 +282,7 @@
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer id="contacts" class="footer">
 		<section class="footer__inner container">
 			<ul class="footer__contacts">
 				<li class="footer__contacts-elem footer__contacts-elem--github">Github</li>
@@ -295,6 +295,11 @@
 		</section>
 	</footer>
 
+	<script
+  		src="https://code.jquery.com/jquery-3.5.1.js"
+  		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  		crossorigin="anonymous">
+  	</script>
 	<script src="src/js/animation.js"></script>
 	<script src="src/js/slider.js"></script>
 </body>
