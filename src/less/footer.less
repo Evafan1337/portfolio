@@ -80,3 +80,27 @@
 .footer__author:before {
     margin-left: -100%;
 }
+
+@media (max-width: 940px){
+	.footer__contacts {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 468px) {
+	.footer__contacts {
+		/*flex-direction: column;*/
+		/*align-items: center;*/
+	}
+
+	.footer__author {
+		font-size: 26px;
+	}
+
+	.footer__contacts-elem {
+		margin-top: 10px;
+		width: 65px;
+		height: 65px;
+	}
+}

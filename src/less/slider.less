@@ -9,7 +9,9 @@
 
 .slider__image {
 	max-width: 600px;
-	outline: 3px solid black;
+	/*outline: 3px solid black;*/
+	/*object-fit: cover;*/
+	height: auto;
 }
 
 .slider__controls {
@@ -66,5 +68,26 @@
 	.slider__controls--left {
 		top: 0;
 		left: 17%;
+	}
+}
+
+@media (max-width: 940px){
+	.slider__image {
+		width: 550px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 768px){
+	.slider__image {
+		width: 400px;
+	}
+}
+
+@media (max-width: 468px) {
+	.slider__image {
+		width: 290px;
 	}
 }
