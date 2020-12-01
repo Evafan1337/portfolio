@@ -51,6 +51,28 @@ body {
 	/*right: -14px;*/
 }
 
+.links-decorator {
+	position: relative;
+	text-decoration: none;
+}
+
+.links-decorator::before {
+	content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    background: white;
+    transition: all 0.1s;
+}
+
+.links-decorator:hover::before {
+	width: 100%;
+	left: 0;
+	background: black;
+}
+
 @media (max-width: 1440px) { 
 	.container--wide {
 		max-width: 940px;
